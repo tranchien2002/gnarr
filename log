@@ -1,0 +1,15 @@
+gnarrr: 2017/11/30 17:07:49 test\form1\test8.txt
+gnarrr: 2017/11/30 17:07:53 test\form1\test7.txt
+form1: 2017/11/30 17:07:53 WARNING: BASE_ON_REGX no match
+form1: 2017/11/30 17:07:53 WARNING: EFFECTIVE_DATE_REGX no match
+gnarrr: 2017/11/30 17:07:59 test\form1\test4.txt
+gnarrr: 2017/11/30 17:08:03 test\form1\test5.txt
+form1: 2017/11/30 17:08:03 WARNING: ARTICLE_REGX run into trouble, but don't worry until second time (_'')
+gnarrr: 2017/11/30 17:09:01 test\form1\test5.txt
+form1: 2017/11/30 17:09:01 WARNING: ARTICLE_REGX run into trouble, but don't worry until second time (_'')
+gnarrr: 2017/11/30 17:09:31 test\form1\test5.txt
+form1: 2017/11/30 17:09:31 WARNING: ARTICLE_REGX run into trouble, but don't worry until second time (_'')
+gnarrr: 2017/11/30 17:09:35 test\form1\test5.txt
+form1: 2017/11/30 17:09:35 WARNING: ARTICLE_REGX run into trouble, but don't worry until second time (_'')
+gnarrr: 2017/11/30 17:09:36 test\form1\test5.txt
+form1: 2017/11/30 17:09:36 WARNING: ARTICLE_REGX run into trouble, but don't worry until second time (_'')
