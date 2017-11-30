@@ -9,6 +9,18 @@ import (
 	"strings"
 )
 
+/*  Kiểm tra mức độ phù hợp
+trả về chỉ số khớp nhỏ hơn bằng 9
+trọng số của "ID" và "article" là 2, các trọng số này có thể căn chỉnh lại cho phù hợp.
+các tiêu chí đánh giá:
+	số hiệu
+	tên
+	căn cứ
+	điều
+	ngày hiệu lực
+	ngày thông qua
+	chữ ký
+*/
 func Check(legis []byte) int {
 	match := 0
 	matched, error := regexp.Match(idEnforcerRegx, legis)
@@ -46,9 +58,13 @@ func Check(legis []byte) int {
 	return match
 }
 
+/*  triển khai
+ */
 func Exec(legis []byte) *structs.Legistration {
 
 	//TODO: thiết kế file log
+
+	//  cấu hình package "log"
 	f, err := os.OpenFile("log", os.O_RDWR|os.O_CREATE|os.O_APPEND, 0666)
 	if err != nil {
 	}
@@ -57,16 +73,12 @@ func Exec(legis []byte) *structs.Legistration {
 	log.SetPrefix("form1: ")
 
 	result := structs.Legistration{}
-	/* I,ll catchh ,em weak firstr
-	 * id, name, base,
-	 * date, signnn
-	 * all o' 'em
-	 */
 
+	//  tìm vị trí điều đầu tiên
 	re0 := regexp.MustCompile(firstArticleRegx)
 	matchfirstArticle := re0.FindSubmatchIndex(legis)
 
-	// mo ngu ????
+	//  cắt riêng phần đầu văn bản để tìm số hiệu, tên,...
 	legisHeader := []byte{}
 	if len(matchfirstArticle) != 0 {
 		legisHeader = legis[0:matchfirstArticle[0]]
@@ -74,6 +86,7 @@ func Exec(legis []byte) *structs.Legistration {
 		log.Println("WARNING: FIRST_ARTICLE_REGX no match")
 	}
 
+	//  tìm số hiệu và cơ quan ban hành
 	re1 := regexp.MustCompile(idEnforcerRegx)
 	matchIdEnforce := re1.FindSubmatch(legisHeader)
 	if len(matchIdEnforce) != 0 {
@@ -83,6 +96,7 @@ func Exec(legis []byte) *structs.Legistration {
 		log.Println("WARNING: ID_ENFORCER_REGX no match")
 	}
 
+	//  tìm tên văn bản
 	re2 := regexp.MustCompile(nameRegx)
 	matchName := re2.FindSubmatch(legisHeader)
 	if len(matchName) != 0 {
@@ -91,6 +105,7 @@ func Exec(legis []byte) *structs.Legistration {
 		log.Println("WARNING: ID_NAME_REGX no match")
 	}
 
+	//  xác định căn cứ
 	re3 := regexp.MustCompile(baseonRegx)
 	matchBaseon := re3.FindAllSubmatch(legisHeader, -1)
 	if len(matchBaseon) != 0 {
@@ -101,6 +116,7 @@ func Exec(legis []byte) *structs.Legistration {
 		log.Println("WARNING: BASE_ON_REGX no match")
 	}
 
+	//  xác định ngày hiệu lực
 	re4 := regexp.MustCompile(effectiveDateRegx)
 	matchEffectiveDate := re4.FindAllSubmatch(legis, -1)
 	i := len(matchEffectiveDate)
@@ -111,6 +127,7 @@ func Exec(legis []byte) *structs.Legistration {
 		log.Println("WARNING: EFFECTIVE_DATE_REGX no match")
 	}
 
+	//  xác định ngày thông qua
 	re5 := regexp.MustCompile(passDateRegx)
 	matchPassDate := re5.FindAllSubmatch(legis, -1)
 	j := len(matchPassDate)
@@ -121,6 +138,7 @@ func Exec(legis []byte) *structs.Legistration {
 		log.Println("WARNING: PASS_DATE_REGX no match")
 	}
 
+	//  xác định chũ ký
 	re6 := regexp.MustCompile(signRegx)
 	matchSign := re6.FindAllSubmatch(legis, -1)
 	k := len(matchSign)
@@ -133,10 +151,9 @@ func Exec(legis []byte) *structs.Legistration {
 		log.Println("WARNING: SIGN_REGX no match")
 	}
 
-	/* ,em bosss comingg here, mov' your head
-	 * i,ll divde ,em by chapter index,
-	 * pushh that bastard to catchchap functionn! Arr!
-	 * boil it, i say boild it,
+	/* Phức tạp: Xử lý các cấu trúc chương, mục, điều
+	 * dựa vào vị trí các chương (nếu có) để chia nhỏ văn bản, tương tự với cấu trúc điều,
+	 * sau đó tạo mảng article của đối tượng từ các đoạn văn bản nhỏ
 	 */
 	result.ChapterArray = []structs.Chapter{}
 	result.ArticleArray = []structs.Article{}
@@ -146,27 +163,23 @@ func Exec(legis []byte) *structs.Legistration {
 
 	switch m := len(matchChapter); m {
 
-	/*  i can,t catch anything!
-	    so pity, chapter-regexship drowned!
-	*/
+	//  trường hợp biểu thức tìm chương không khớp (cả dấu hiệu kết thúc ở nhóm cuối cũng không khớp)
 	case 0:
 		log.Println("WARNING: END_REGX no match")
 
-		//  continue contribute ArticleArray with the first element [0] contain "regency"
+		//  tạo mảng article với phần tử [0] là chức vụ người ký
 		regencyElement := structs.Article{
 			Header:  "regency",
 			Content: "unidentify",
 		}
 		result.ArticleArray = append(result.ArticleArray, regencyElement)
 
-		//got ,em all
+		//  tiếp tục tạo mảng article với tất cả các điều còn lại
 		pushAllArticleArray(&result, legis)
 
-	/*  only end signal,
-	    parfect, no chapter no topic no problemm~
-	*/
+	//  trường hợp chỉ bắt được dấu hiệu kết thúc
 	case 1:
-		//  contribute ArticleArray with the first element [0] contain "regency"
+		//  tạo mảng article với phần tử [0] là chức vụ người ký
 		regency := ""
 		if len(matchChapter[0]) < 4 {
 			log.Println("WARNING: CHAPTER_REGX run into a problem")
@@ -179,14 +192,12 @@ func Exec(legis []byte) *structs.Legistration {
 		}
 		result.ArticleArray = append(result.ArticleArray, regencyElement)
 
-		//comee in
+		//  tiếp tục tạo mảng article với các điều còn lại
 		pushAllArticleArray(&result, legis)
 
-	/*  the time has come,
-	    we need to fa,e this!
-	*/
+	//  trường hợp có các chương
 	default:
-		//pick "regency" and put to first jail celll!
+		//  tạo phần tử đầu tiên chứa chức vụ người ký
 		regency := ""
 		if len(matchChapter[m-1]) < 4 {
 			log.Println("WARNING: CHAPTER_REGX run into a problem")
@@ -199,18 +210,16 @@ func Exec(legis []byte) *structs.Legistration {
 		}
 		result.ArticleArray = append(result.ArticleArray, regencyElement)
 
-		/*  divvide by chapter, cut ,em
-		    put pieces to the sausage factory creatChapter
-		*/
+		//  cắt dữ liệu theo từng chương
 		for i := 0; i < m-1; i++ {
 			chapterContent := legis[matchChapterIndex[i][1] : matchChapterIndex[i+1][0]+1]
 			chapterHeader := string(matchChapter[i][2])
+
+			//  tạo cáu trúc chương với dữ liệu đã cắt
 			creatChapter(&result, chapterContent, chapterHeader)
 		}
 
-		/*	th,s final part, we handle it in our handd"!
-			content same same legis[x:]
-		*/
+		//  xử lý nhóm cuối (có thể là phần cuối của văn bản, có thể là phần cuối của một chương,tùy thuộc nhóm cuối có khớp không)
 		finalChapterContent := legis[matchChapterIndex[m-1][1]:]
 		test := structs.Legistration{}
 		test1, test2 := pushArticleArray(&test, finalChapterContent)
@@ -220,21 +229,19 @@ func Exec(legis []byte) *structs.Legistration {
 		}
 	}
 
-	/*  alright, allllright, i likke to mov'it
-	    gotta abandon ship!
-	*/
+	//  trả về đối tượng đã được khởi tạo
 	return &result
 }
 
+/*  hàm tạo các đối tượng chapter
+ */
 func creatChapter(target *structs.Legistration, contentPie []byte, header string) {
 	regx := regexp.MustCompile(topicRegx)
 	matchTopic := regx.FindAllSubmatch(contentPie, -1)
 
 	switch n := len(matchTopic); n {
 
-	/*  thank god,
-	    no topic
-	*/
+	//  trường hợp không có các mục
 	case 0:
 		first, last := pushArticleArray(target, contentPie)
 		temp := structs.Chapter{
@@ -245,7 +252,7 @@ func creatChapter(target *structs.Legistration, contentPie []byte, header string
 		}
 		target.ChapterArray = append(target.ChapterArray, temp)
 
-	/*  include topics... */
+	//  trường hợp có các mục
 	default:
 		temp := structs.Chapter{
 			Header:       header,
@@ -254,7 +261,7 @@ func creatChapter(target *structs.Legistration, contentPie []byte, header string
 			TopicArray:   []structs.Topic{},
 		}
 
-		//  diwede them by topic, put them to creatTopic
+		//  chia nhỏ đoạn văn bản thành các đoạn nhỏ hơn theo vị trí mục và tạo các mục này, đồng thời []article được tạo
 		matchTopicIndex := regx.FindAllSubmatchIndex(contentPie, -1)
 		for i := 0; i < n-1; i++ {
 			topicContent := contentPie[matchTopicIndex[i][1] : matchTopicIndex[i+1][0]+1]
@@ -267,15 +274,14 @@ func creatChapter(target *structs.Legistration, contentPie []byte, header string
 		temp.FirstArticle = temp.TopicArray[0].FirstArticle
 		temp.LastArticle = temp.TopicArray[n-1].LastArticle
 
-		//  imprison temp chapter!
+		//  thêm temp vào []chapter của đối tượng
 		target.ChapterArray = append(target.ChapterArray, temp)
 	}
 
 }
 
-/*  pushh articles to the jail from a []byteship ~
-    bye ,em
-    throw out the first and last
+/*  tạo các điều trong một đoạn văn bản, đưa vào []article của đối tượng,
+trả về chỉ số của điều đầu tiên và cuối cùng trong đoạn văn bản.
 */
 func pushArticleArray(target *structs.Legistration, contentPie []byte) (int64, int64) {
 	regx := regexp.MustCompile(articleRegx)
@@ -283,7 +289,7 @@ func pushArticleArray(target *structs.Legistration, contentPie []byte) (int64, i
 	matchIndex := regx.FindAllSubmatchIndex(contentPie, -1)
 	n := len(match)
 
-	//  contentPie empty, fal, bak
+	//  không khớp
 	if n == 0 {
 		log.Println("WARNING: ARTICLE_REGX run into trouble, but don't worry until second time (_'')")
 		return -1, -1
@@ -294,9 +300,7 @@ func pushArticleArray(target *structs.Legistration, contentPie []byte) (int64, i
 	   ('')(_''_) (''_)
 	*/
 
-	/*  divide article, get content between them
-	    catch 1, imprison 1
-	*/
+	//  chia các diều là dựa vào vị trí, tạo các điều đưa vào []array
 	for i := 0; i < n-1; i++ {
 		content := strings.TrimSpace(string(contentPie[matchIndex[i][1] : matchIndex[i+1][0]+1]))
 		temp := structs.Article{
@@ -306,7 +310,7 @@ func pushArticleArray(target *structs.Legistration, contentPie []byte) (int64, i
 		target.ArticleArray = append(target.ArticleArray, temp)
 	}
 
-	//  we gotta handed the last by hand
+	//  tương tự như creatChapter, cần xử lý thêm nhóm cuối để tăng độ chính xác
 	finalArticleContent := strings.TrimSpace(string(contentPie[matchIndex[n-1][1]+1:]))
 	finalArticleHeader := string(match[n-1][4])
 	finalArticle := structs.Article{
@@ -315,7 +319,7 @@ func pushArticleArray(target *structs.Legistration, contentPie []byte) (int64, i
 	}
 	target.ArticleArray = append(target.ArticleArray, finalArticle)
 
-	//  we call the firt and last to 'now their number
+	//  xác định chỉ số đầu và cuối
 	a := string(match[0][3])
 	first, err1 := strconv.ParseInt(a, 10, 64)
 	if err1 != nil {
@@ -329,9 +333,11 @@ func pushArticleArray(target *structs.Legistration, contentPie []byte) (int64, i
 	return first, last
 }
 
+/*  đưa toàn bộ điều của toàn văn bản vào []article
+ */
 func pushAllArticleArray(target *structs.Legistration, contentPie []byte) {
 
-	//  divide, put at full force!!
+	//  chia nhỏ thành các điều, tạo và đưa vào []article
 	regx := regexp.MustCompile(articleRegx)
 	match := regx.FindAllSubmatch(contentPie, -1)
 	matchIndex := regx.FindAllSubmatchIndex(contentPie, -1)
@@ -349,6 +355,8 @@ func pushAllArticleArray(target *structs.Legistration, contentPie []byte) {
 	}
 }
 
+/*  tạo topic, tương tự như chapter
+ */
 func creatTopic(target *structs.Legistration, targetChapter *structs.Chapter, contentPie []byte, header string) {
 
 	//  like dad, like son~
