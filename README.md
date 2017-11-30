@@ -13,12 +13,13 @@ chuyển đổi mảng byte ban đầu đọc từ file thành mảng byte JSON
 
 	package picker/form*
 	cách xử lý của từng định dạng
+	
 		regx.go
 		các hằng regexp được sử dụng
 		
 		form*.go
 		xử lý định dạng *
-           	    func check(legis []byte) int{
+           	    func Check(legis []byte) int{
                        // trả về chỉ số khớp, dùng để lựa chọn chiến thuật
                     }
                     func Exec(legis []byte) *structs.Legistration{
