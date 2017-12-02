@@ -13,3 +13,21 @@ gnarrr: 2017/11/30 17:09:35 test\form1\test5.txt
 form1: 2017/11/30 17:09:35 WARNING: ARTICLE_REGX run into trouble, but don't worry until second time (_'')
 gnarrr: 2017/11/30 17:09:36 test\form1\test5.txt
 form1: 2017/11/30 17:09:36 WARNING: ARTICLE_REGX run into trouble, but don't worry until second time (_'')
+gnarrr: 2017/12/02 08:28:31 test/*
+gnarrr: 2017/12/02 08:28:31 open test/*: The filename, directory name, or volume label syntax is incorrect.
+gnarrr: 2017/12/02 08:37:18 test/form1/test7.txt
+form1: 2017/12/02 08:37:18 WARNING: BASE_ON_REGX no match
+form1: 2017/12/02 08:37:19 WARNING: EFFECTIVE_DATE_REGX no match
+gnarrr: 2017/12/02 08:38:02 test/form1/test7.txt
+form1: 2017/12/02 08:38:02 WARNING: BASE_ON_REGX no match
+form1: 2017/12/02 08:38:02 WARNING: EFFECTIVE_DATE_REGX no match
+gnarrr: 2017/12/02 08:40:46 test/form1/test7.txt
+form1: 2017/12/02 08:40:46 WARNING: BASE_ON_REGX no match
+form1: 2017/12/02 08:40:46 WARNING: EFFECTIVE_DATE_REGX no match
+gnarrr: 2017/12/02 08:40:56 test/form1/test6.txt
+gnarrr: 2017/12/02 08:41:00 test/form1/test4.txt
+gnarrr: 2017/12/02 08:41:00 open test/form1/test4.txt: The system cannot find the file specified.
+gnarrr: 2017/12/02 08:41:14 test/form1/test5.txt
+form1: 2017/12/02 08:41:14 WARNING: ARTICLE_REGX run into trouble, but don't worry until second time (_'')
+gnarrr: 2017/12/02 08:41:22 test/form1/test2.txt
+form1: 2017/12/02 08:41:22 WARNING: ARTICLE_REGX run into trouble, but don't worry until second time (_'')

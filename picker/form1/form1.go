@@ -323,12 +323,12 @@ func pushArticleArray(target *structs.Legistration, contentPie []byte) (int64, i
 	a := string(match[0][3])
 	first, err1 := strconv.ParseInt(a, 10, 64)
 	if err1 != nil {
-		panic(err1)
+		log.Panic(err1)
 	}
 	b := string(match[n-1][3])
 	last, err2 := strconv.ParseInt(b, 10, 64)
 	if err2 != nil {
-		panic(err2)
+		log.Panic(err2)
 	}
 	return first, last
 }
