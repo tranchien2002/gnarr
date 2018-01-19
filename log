@@ -31,3 +31,352 @@ gnarrr: 2017/12/02 08:41:14 test/form1/test5.txt
 form1: 2017/12/02 08:41:14 WARNING: ARTICLE_REGX run into trouble, but don't worry until second time (_'')
 gnarrr: 2017/12/02 08:41:22 test/form1/test2.txt
 form1: 2017/12/02 08:41:22 WARNING: ARTICLE_REGX run into trouble, but don't worry until second time (_'')
+gnarrr: 2018/01/19 15:47:00 Law/	19-2017-QH14
+form1: 2018/01/19 15:47:00 WARNING: SIGN_REGX no match
+form1: 2018/01/19 15:47:00 WARNING: END_REGX no match
+form1: 2018/01/19 15:47:00 WARNING: ARTICLE_REGX run into trouble, but don't worry until second time (_'')
+form1: 2018/01/19 15:47:01 WARNING: ARTICLE_REGX run into trouble, but don't worry until second time (_'')
+form1: 2018/01/19 15:47:01 WARNING: SIGN_REGX no match
+form1: 2018/01/19 15:47:01 WARNING: SIGN_REGX no match
+form1: 2018/01/19 15:47:01 WARNING: SIGN_REGX no match
+form1: 2018/01/19 15:47:02 WARNING: SIGN_REGX no match
+form1: 2018/01/19 15:47:02 WARNING: SIGN_REGX no match
+form1: 2018/01/19 15:47:02 WARNING: SIGN_REGX no match
+form1: 2018/01/19 15:47:03 WARNING: SIGN_REGX no match
+form1: 2018/01/19 15:47:03 WARNING: END_REGX no match
+form1: 2018/01/19 15:47:03 WARNING: SIGN_REGX no match
+form1: 2018/01/19 15:47:03 WARNING: SIGN_REGX no match
+form1: 2018/01/19 15:47:04 WARNING: SIGN_REGX no match
+form1: 2018/01/19 15:47:04 WARNING: SIGN_REGX no match
+form1: 2018/01/19 15:47:05 WARNING: SIGN_REGX no match
+form1: 2018/01/19 15:47:05 WARNING: END_REGX no match
+form1: 2018/01/19 15:47:05 WARNING: SIGN_REGX no match
+form1: 2018/01/19 15:47:06 WARNING: SIGN_REGX no match
+gnarrr: 2018/01/19 16:30:46 Law/	19-2017-QH14
+form1: 2018/01/19 16:30:46 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:30:46 WARNING: END_REGX no match
+form1: 2018/01/19 16:30:46 WARNING: ARTICLE_REGX run into trouble, but don't worry until second time (_'')
+form1: 2018/01/19 16:30:46 WARNING: ARTICLE_REGX run into trouble, but don't worry until second time (_'')
+form1: 2018/01/19 16:30:46 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:30:47 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:30:47 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:30:47 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:30:47 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:30:48 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:30:48 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:30:48 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:30:48 WARNING: END_REGX no match
+form1: 2018/01/19 16:30:48 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:30:49 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:30:49 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:30:49 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:30:49 WARNING: END_REGX no match
+form1: 2018/01/19 16:30:49 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:30:49 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:30:49 WARNING: END_REGX no match
+form1: 2018/01/19 16:30:50 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:30:50 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:30:50 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:30:51 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:30:52 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:30:53 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:30:55 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:30:55 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:30:55 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:30:56 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:30:56 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:30:56 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:30:57 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:30:57 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:30:59 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:31:00 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:31:01 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:31:02 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:31:02 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:31:02 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:31:03 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:31:03 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:31:03 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:31:04 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:31:04 WARNING: EFFECTIVE_DATE_REGX no match
+form1: 2018/01/19 16:31:04 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:31:05 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:31:05 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:31:05 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:31:06 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:31:06 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:31:07 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:31:07 WARNING: END_REGX no match
+form1: 2018/01/19 16:31:07 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:31:08 WARNING: SIGN_REGX no match
+gnarrr: 2018/01/19 16:32:52 Law/	19-2017-QH14
+form1: 2018/01/19 16:32:52 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:32:52 WARNING: END_REGX no match
+form1: 2018/01/19 16:32:53 WARNING: ARTICLE_REGX run into trouble, but don't worry until second time (_'')
+form1: 2018/01/19 16:32:53 WARNING: ARTICLE_REGX run into trouble, but don't worry until second time (_'')
+form1: 2018/01/19 16:32:53 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:32:53 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:32:54 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:32:54 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:32:54 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:32:55 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:32:55 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:32:55 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:32:55 WARNING: END_REGX no match
+form1: 2018/01/19 16:32:55 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:32:56 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:32:56 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:32:56 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:32:56 WARNING: END_REGX no match
+form1: 2018/01/19 16:32:56 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:32:56 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:32:56 WARNING: END_REGX no match
+form1: 2018/01/19 16:32:57 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:32:57 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:32:57 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:32:58 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:32:58 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:33:00 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:33:02 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:33:02 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:33:02 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:33:02 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:33:02 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:33:03 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:33:04 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:33:04 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:33:06 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:33:07 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:33:08 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:33:08 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:33:09 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:33:09 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:33:09 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:33:10 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:33:10 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:33:11 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:33:11 WARNING: EFFECTIVE_DATE_REGX no match
+form1: 2018/01/19 16:33:11 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:33:12 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:33:12 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:33:12 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:33:13 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:33:13 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:33:14 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:33:14 WARNING: END_REGX no match
+form1: 2018/01/19 16:33:14 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:33:14 WARNING: SIGN_REGX no match
+gnarrr: 2018/01/19 16:34:23 Law/	19-2017-QH14
+form1: 2018/01/19 16:34:23 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:34:23 WARNING: END_REGX no match
+form1: 2018/01/19 16:34:23 Law/tt
+form1: 2018/01/19 16:34:23 WARNING: ARTICLE_REGX run into trouble, but don't worry until second time (_'')
+form1: 2018/01/19 16:34:23 Law/tt2
+form1: 2018/01/19 16:34:23 WARNING: ARTICLE_REGX run into trouble, but don't worry until second time (_'')
+form1: 2018/01/19 16:34:23 Law/Untitled Document
+form1: 2018/01/19 16:34:23 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:34:24 Law/Untitled Document 10
+form1: 2018/01/19 16:34:24 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:34:24 Law/Untitled Document 11
+form1: 2018/01/19 16:34:24 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:34:24 Law/Untitled Document 12
+form1: 2018/01/19 16:34:24 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:34:24 Law/Untitled Document 13
+form1: 2018/01/19 16:34:25 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:34:25 Law/Untitled Document 14
+form1: 2018/01/19 16:34:25 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:34:25 Law/Untitled Document 15
+form1: 2018/01/19 16:34:25 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:34:25 Law/Untitled Document 16
+form1: 2018/01/19 16:34:25 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:34:25 WARNING: END_REGX no match
+form1: 2018/01/19 16:34:25 Law/Untitled Document 17
+form1: 2018/01/19 16:34:25 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:34:26 Law/Untitled Document 18
+form1: 2018/01/19 16:34:26 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:34:26 Law/Untitled Document 19
+form1: 2018/01/19 16:34:26 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:34:26 Law/Untitled Document 2
+form1: 2018/01/19 16:34:26 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:34:26 WARNING: END_REGX no match
+form1: 2018/01/19 16:34:26 Law/Untitled Document 20
+form1: 2018/01/19 16:34:26 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:34:26 Law/Untitled Document 21
+form1: 2018/01/19 16:34:26 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:34:26 WARNING: END_REGX no match
+form1: 2018/01/19 16:34:26 Law/Untitled Document 22
+form1: 2018/01/19 16:34:27 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:34:27 Law/Untitled Document 23
+form1: 2018/01/19 16:34:27 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:34:27 Law/Untitled Document 24
+form1: 2018/01/19 16:34:27 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:34:27 Law/Untitled Document 25
+form1: 2018/01/19 16:34:28 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:34:28 Law/Untitled Document 26
+form1: 2018/01/19 16:34:28 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:34:30 Law/Untitled Document 27
+form1: 2018/01/19 16:34:30 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:34:31 Law/Untitled Document 28
+form1: 2018/01/19 16:34:31 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:34:32 Law/Untitled Document 29
+form1: 2018/01/19 16:34:32 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:34:32 Law/Untitled Document 3
+form1: 2018/01/19 16:34:32 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:34:32 Law/Untitled Document 30
+form1: 2018/01/19 16:34:32 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:34:32 Law/Untitled Document 31
+form1: 2018/01/19 16:34:32 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:34:33 Law/Untitled Document 32
+form1: 2018/01/19 16:34:33 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:34:33 Law/Untitled Document 33
+form1: 2018/01/19 16:34:34 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:34:34 Law/Untitled Document 34
+form1: 2018/01/19 16:34:34 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:34:35 Law/Untitled Document 35
+form1: 2018/01/19 16:34:35 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:34:37 Law/Untitled Document 36
+form1: 2018/01/19 16:34:37 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:34:38 Law/Untitled Document 37
+form1: 2018/01/19 16:34:38 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:34:38 Law/Untitled Document 38
+form1: 2018/01/19 16:34:38 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:34:38 Law/Untitled Document 39
+form1: 2018/01/19 16:34:38 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:34:39 Law/Untitled Document 4
+form1: 2018/01/19 16:34:39 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:34:39 Law/Untitled Document 40
+form1: 2018/01/19 16:34:39 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:34:40 Law/Untitled Document 41
+form1: 2018/01/19 16:34:40 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:34:40 Law/Untitled Document 42
+form1: 2018/01/19 16:34:40 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:34:40 Law/Untitled Document 43
+form1: 2018/01/19 16:34:40 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:34:41 Law/Untitled Document 44
+form1: 2018/01/19 16:34:41 WARNING: EFFECTIVE_DATE_REGX no match
+form1: 2018/01/19 16:34:41 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:34:41 Law/Untitled Document 45
+form1: 2018/01/19 16:34:41 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:34:42 Law/Untitled Document 46
+form1: 2018/01/19 16:34:42 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:34:42 Law/Untitled Document 47
+form1: 2018/01/19 16:34:42 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:34:42 Law/Untitled Document 5
+form1: 2018/01/19 16:34:43 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:34:43 Law/Untitled Document 6
+form1: 2018/01/19 16:34:43 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:34:43 Law/Untitled Document 7
+form1: 2018/01/19 16:34:43 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:34:44 WARNING: END_REGX no match
+form1: 2018/01/19 16:34:44 open output/LUẬT SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA BỘ LUẬT HÌNH SỰ SỐ 100/2015/QH13_2017.json: no such file or directory
+form1: 2018/01/19 16:34:44 Law/Untitled Document 8
+form1: 2018/01/19 16:34:44 WARNING: SIGN_REGX no match
+form1: 2018/01/19 16:34:44 Law/Untitled Document 9
+form1: 2018/01/19 16:34:44 WARNING: SIGN_REGX no match
+gnarrr: 2018/01/20 00:09:37 Law/	19-2017-QH14
+form1: 2018/01/20 00:09:37 WARNING: SIGN_REGX no match
+form1: 2018/01/20 00:09:37 WARNING: END_REGX no match
+form1: 2018/01/20 00:09:37 Law/tt
+form1: 2018/01/20 00:09:37 WARNING: ARTICLE_REGX run into trouble, but don't worry until second time (_'')
+form1: 2018/01/20 00:09:37 Law/tt2
+form1: 2018/01/20 00:09:37 WARNING: ARTICLE_REGX run into trouble, but don't worry until second time (_'')
+form1: 2018/01/20 00:09:37 Law/Untitled Document
+form1: 2018/01/20 00:09:37 WARNING: SIGN_REGX no match
+form1: 2018/01/20 00:09:37 Law/Untitled Document 10
+form1: 2018/01/20 00:09:37 WARNING: SIGN_REGX no match
+form1: 2018/01/20 00:09:37 Law/Untitled Document 11
+form1: 2018/01/20 00:09:38 WARNING: SIGN_REGX no match
+form1: 2018/01/20 00:09:38 Law/Untitled Document 12
+form1: 2018/01/20 00:09:38 WARNING: SIGN_REGX no match
+form1: 2018/01/20 00:09:38 Law/Untitled Document 13
+form1: 2018/01/20 00:09:38 WARNING: SIGN_REGX no match
+form1: 2018/01/20 00:09:38 Law/Untitled Document 14
+form1: 2018/01/20 00:09:38 WARNING: SIGN_REGX no match
+form1: 2018/01/20 00:09:38 Law/Untitled Document 15
+form1: 2018/01/20 00:09:38 WARNING: SIGN_REGX no match
+form1: 2018/01/20 00:09:38 Law/Untitled Document 16
+form1: 2018/01/20 00:09:38 WARNING: SIGN_REGX no match
+form1: 2018/01/20 00:09:38 WARNING: END_REGX no match
+form1: 2018/01/20 00:09:38 Law/Untitled Document 17
+form1: 2018/01/20 00:09:38 WARNING: SIGN_REGX no match
+form1: 2018/01/20 00:09:38 Law/Untitled Document 18
+form1: 2018/01/20 00:09:38 WARNING: SIGN_REGX no match
+form1: 2018/01/20 00:09:38 Law/Untitled Document 19
+form1: 2018/01/20 00:09:38 WARNING: SIGN_REGX no match
+form1: 2018/01/20 00:09:38 Law/Untitled Document 2
+form1: 2018/01/20 00:09:38 WARNING: SIGN_REGX no match
+form1: 2018/01/20 00:09:38 WARNING: END_REGX no match
+form1: 2018/01/20 00:09:38 Law/Untitled Document 20
+form1: 2018/01/20 00:09:38 WARNING: SIGN_REGX no match
+form1: 2018/01/20 00:09:38 Law/Untitled Document 21
+form1: 2018/01/20 00:09:38 WARNING: SIGN_REGX no match
+form1: 2018/01/20 00:09:38 WARNING: END_REGX no match
+form1: 2018/01/20 00:09:38 Law/Untitled Document 22
+form1: 2018/01/20 00:09:38 WARNING: SIGN_REGX no match
+form1: 2018/01/20 00:09:38 Law/Untitled Document 23
+form1: 2018/01/20 00:09:38 WARNING: SIGN_REGX no match
+form1: 2018/01/20 00:09:38 Law/Untitled Document 24
+form1: 2018/01/20 00:09:38 WARNING: SIGN_REGX no match
+form1: 2018/01/20 00:09:38 Law/Untitled Document 25
+form1: 2018/01/20 00:09:38 WARNING: SIGN_REGX no match
+form1: 2018/01/20 00:09:38 Law/Untitled Document 26
+form1: 2018/01/20 00:09:38 WARNING: SIGN_REGX no match
+form1: 2018/01/20 00:09:39 Law/Untitled Document 27
+form1: 2018/01/20 00:09:39 WARNING: SIGN_REGX no match
+form1: 2018/01/20 00:09:39 Law/Untitled Document 28
+form1: 2018/01/20 00:09:39 WARNING: SIGN_REGX no match
+form1: 2018/01/20 00:09:39 Law/Untitled Document 29
+form1: 2018/01/20 00:09:39 WARNING: SIGN_REGX no match
+form1: 2018/01/20 00:09:39 Law/Untitled Document 3
+form1: 2018/01/20 00:09:39 WARNING: SIGN_REGX no match
+form1: 2018/01/20 00:09:39 Law/Untitled Document 30
+form1: 2018/01/20 00:09:39 WARNING: SIGN_REGX no match
+form1: 2018/01/20 00:09:39 Law/Untitled Document 31
+form1: 2018/01/20 00:09:39 WARNING: SIGN_REGX no match
+form1: 2018/01/20 00:09:39 Law/Untitled Document 32
+form1: 2018/01/20 00:09:39 WARNING: SIGN_REGX no match
+form1: 2018/01/20 00:09:39 Law/Untitled Document 33
+form1: 2018/01/20 00:09:39 WARNING: SIGN_REGX no match
+form1: 2018/01/20 00:09:39 Law/Untitled Document 34
+form1: 2018/01/20 00:09:39 WARNING: SIGN_REGX no match
+form1: 2018/01/20 00:09:39 Law/Untitled Document 35
+form1: 2018/01/20 00:09:40 WARNING: SIGN_REGX no match
+form1: 2018/01/20 00:09:40 Law/Untitled Document 36
+form1: 2018/01/20 00:09:40 WARNING: SIGN_REGX no match
+form1: 2018/01/20 00:09:40 Law/Untitled Document 37
+form1: 2018/01/20 00:09:40 WARNING: SIGN_REGX no match
+form1: 2018/01/20 00:09:40 Law/Untitled Document 38
+form1: 2018/01/20 00:09:40 WARNING: SIGN_REGX no match
+form1: 2018/01/20 00:09:40 Law/Untitled Document 39
+form1: 2018/01/20 00:09:40 WARNING: SIGN_REGX no match
+form1: 2018/01/20 00:09:40 Law/Untitled Document 4
+form1: 2018/01/20 00:09:40 WARNING: SIGN_REGX no match
+form1: 2018/01/20 00:09:40 Law/Untitled Document 40
+form1: 2018/01/20 00:09:40 WARNING: SIGN_REGX no match
+form1: 2018/01/20 00:09:40 Law/Untitled Document 41
+form1: 2018/01/20 00:09:40 WARNING: SIGN_REGX no match
+form1: 2018/01/20 00:09:40 Law/Untitled Document 42
+form1: 2018/01/20 00:09:40 WARNING: SIGN_REGX no match
+form1: 2018/01/20 00:09:40 Law/Untitled Document 43
+form1: 2018/01/20 00:09:40 WARNING: SIGN_REGX no match
+form1: 2018/01/20 00:09:40 Law/Untitled Document 44
+form1: 2018/01/20 00:09:40 WARNING: EFFECTIVE_DATE_REGX no match
+form1: 2018/01/20 00:09:40 WARNING: SIGN_REGX no match
+form1: 2018/01/20 00:09:41 Law/Untitled Document 45
+form1: 2018/01/20 00:09:41 WARNING: SIGN_REGX no match
+form1: 2018/01/20 00:09:41 Law/Untitled Document 46
+form1: 2018/01/20 00:09:41 WARNING: SIGN_REGX no match
+form1: 2018/01/20 00:09:41 Law/Untitled Document 47
+form1: 2018/01/20 00:09:41 WARNING: SIGN_REGX no match
+form1: 2018/01/20 00:09:41 Law/Untitled Document 5
+form1: 2018/01/20 00:09:41 WARNING: SIGN_REGX no match
+form1: 2018/01/20 00:09:41 Law/Untitled Document 6
+form1: 2018/01/20 00:09:41 WARNING: SIGN_REGX no match
+form1: 2018/01/20 00:09:41 Law/Untitled Document 7
+form1: 2018/01/20 00:09:41 WARNING: SIGN_REGX no match
+form1: 2018/01/20 00:09:41 WARNING: END_REGX no match
+form1: 2018/01/20 00:09:41 open output/LUẬT SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA BỘ LUẬT HÌNH SỰ SỐ 100/2015/QH13_2017.json: no such file or directory
+form1: 2018/01/20 00:09:41 Law/Untitled Document 8
+form1: 2018/01/20 00:09:41 WARNING: SIGN_REGX no match
+form1: 2018/01/20 00:09:41 Law/Untitled Document 9
+form1: 2018/01/20 00:09:41 WARNING: SIGN_REGX no match
